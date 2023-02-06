@@ -1,0 +1,15 @@
+/home/sneg/Documents/C#/IndexMatrix/bin/Debug/net7.0/IndexMatrix
+/home/sneg/Documents/C#/IndexMatrix/bin/Debug/net7.0/IndexMatrix.deps.json
+/home/sneg/Documents/C#/IndexMatrix/bin/Debug/net7.0/IndexMatrix.runtimeconfig.json
+/home/sneg/Documents/C#/IndexMatrix/bin/Debug/net7.0/IndexMatrix.dll
+/home/sneg/Documents/C#/IndexMatrix/bin/Debug/net7.0/IndexMatrix.pdb
+/home/sneg/Documents/C#/IndexMatrix/obj/Debug/net7.0/IndexMatrix.csproj.AssemblyReference.cache
+/home/sneg/Documents/C#/IndexMatrix/obj/Debug/net7.0/IndexMatrix.GeneratedMSBuildEditorConfig.editorconfig
+/home/sneg/Documents/C#/IndexMatrix/obj/Debug/net7.0/IndexMatrix.AssemblyInfoInputs.cache
+/home/sneg/Documents/C#/IndexMatrix/obj/Debug/net7.0/IndexMatrix.AssemblyInfo.cs
+/home/sneg/Documents/C#/IndexMatrix/obj/Debug/net7.0/IndexMatrix.csproj.CoreCompileInputs.cache
+/home/sneg/Documents/C#/IndexMatrix/obj/Debug/net7.0/IndexMatrix.dll
+/home/sneg/Documents/C#/IndexMatrix/obj/Debug/net7.0/refint/IndexMatrix.dll
+/home/sneg/Documents/C#/IndexMatrix/obj/Debug/net7.0/IndexMatrix.pdb
+/home/sneg/Documents/C#/IndexMatrix/obj/Debug/net7.0/IndexMatrix.genruntimeconfig.cache
+/home/sneg/Documents/C#/IndexMatrix/obj/Debug/net7.0/ref/IndexMatrix.dll
