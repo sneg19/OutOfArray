@@ -11,57 +11,47 @@
 3. Вернуть значение этого элемента массива / указать что его нет.
 */
 
-int[,] GetMatrix(int m, int n, int minValue, int maxValue)
+int[,] GetMatrix(int m, int n, int minValue, int maxValue)  // Генерация двумерного массива
 {
     int[,] matrix = new int[m, n];
-    for (int i = 0; i < matrix.GetLength(0); i++)
+    for (int row = 0; row < matrix.GetLength(0); row++)
     {
-        for (int j = 0; j < matrix.GetLength(1); j++)
+        for (int column = 0; column < matrix.GetLength(1); column++)
         {
-            matrix[i, j] = new Random().Next(minValue, maxValue + 1);
+            matrix[row, column] = new Random().Next(minValue, maxValue + 1);
         }
     }
     return matrix;
 }
 
-void PrintArray(int[,] inArray)
+void PrintArray(int[,] inArray)  // Вывод массива на консоль
 {
-    for (int i = 0; i < inArray.GetLength(0); i++)
+    for (int row = 0; row < inArray.GetLength(0); row++)
     {
-        for (int j = 0; j < inArray.GetLength(1); j++)
+        for (int column = 0; column < inArray.GetLength(1); column++)
         {
-            Console.Write($"{inArray[i, j]}\t ");
+            Console.Write($"{inArray[row, column]}\t ");
         }
         Console.WriteLine();
     }
 }
 
-bool UserInput(int[,] InMatrix, int indexX, int indexY)
+void GetMatrixCal(int[,] matrix)  // Получение индексов элемента и проверка границ массива
 {
-    for (int i = 0; i < InMatrix.GetLength(0); i++)
-    {
-        for (int j = 0; j < InMatrix.GetLength(1); j++)
-        {
-            if (InMatrix[i, j] == InMatrix[indexX, indexY] ) return true;
-        }
-    }
-    return false;
+    Console.Write("Введите номер строки элемента массива: ");
+    int row = int.Parse(Console.ReadLine()!);
+    Console.Write("Введите номер стобца элемента массива: ");
+    int column = int.Parse(Console.ReadLine()!);
+    if(row > matrix.GetLength(0) || column > matrix.GetLength(1)) Console.WriteLine("Такого элемента массива нет ");
+    else Console.WriteLine(matrix[row, column]);
 }
 
-
-Console.WriteLine("Введите первую координату элемента массива: ");
-int indexX = int.Parse(Console.ReadLine()!);
-Console.WriteLine("Введите вторую координату элемента массива: ");
-int indexY = int.Parse(Console.ReadLine()!);
-
-int[,] ourArray = GetMatrix(3, 4, -10, 10);
-bool condition = UserInput(ourArray, indexX, indexY);
+void Main()  // Административная функция
+{
+Console.Clear();
+int[,] ourArray = GetMatrix(3, 4, 0, 50);
 PrintArray(ourArray);
-if(condition == true)
- {
-    Console.WriteLine($"{ourArray[indexX, indexY]} такой элемент присутствует в массиве");
- }
- else
- {
-    Console.WriteLine($"Такого элемента в массиве нет");
- }
+GetMatrixCal(ourArray);
+}
+
+Main();
